@@ -2,7 +2,8 @@ import SingleSkill from "./SingleSkill";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript, SiDotnet } from "react-icons/si";
+import { SiTypescript, SiDotnet, SiPostgresql,
+  SiOpenai  } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -44,6 +45,8 @@ const skills = [
     icon: FaNodeJs,
   },
   { skill: "ASP.NET", icon: SiDotnet },
+  { skill: "PostgreSQL", icon: SiPostgresql },
+  { skill: "OpenAI", icon: SiOpenai },
 ];
 
 const AllSkills = () => {

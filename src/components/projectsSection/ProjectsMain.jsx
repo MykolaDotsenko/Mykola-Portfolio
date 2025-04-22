@@ -5,32 +5,32 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Movies Manager",
+    year: "Apr2025",
     align: "right",
     image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    link: "https://github.com/MykolaDotsenko/movies-manager",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Property Pulse",
+    year: "Dec2024",
     align: "left",
     image: "../../public/images/website-img-2.jpeg",
-    link: "#",
+    link: "https://github.com/MykolaDotsenko/property-pulse",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Moviedux",
+    year: "Jun2024",
     align: "right",
     image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    link: "https://github.com/MykolaDotsenko/moviedux",
   },
   {
-    name: "Bank of Luck",
+    name: "Headliners-artists-tailwind",
     year: "May2024",
     align: "left",
     image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    link: "https://github.com/MykolaDotsenko/Headliners-artists-tailwind",
   },
 ];
 
@@ -54,6 +54,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link={project.link}
             />
           );
         })}

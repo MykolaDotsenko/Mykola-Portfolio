@@ -2,6 +2,7 @@ import SingleExperience from "./SingleExperience";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import React from "react";
 
 const experiences = [
   {
@@ -62,8 +63,8 @@ const AllExperiences = () => {
     <div className="flex md:flex-row sm:flex-col flex-wrap items-start gap-6">
       {experiences.map((experience, index) => {
         return (
-          <>
-            <SingleExperience key={index} experience={experience} />
+          <React.Fragment key={index}>
+            <SingleExperience experience={experience} />
             {index < 3 ? (
               <motion.div
                 variants={fadeIn("right", 0)}
@@ -76,10 +77,10 @@ const AllExperiences = () => {
             ) : (
               ""
             )}
-          </>
+          </React.Fragment>
         );
-      })}
-    </div>
+
+      })}    </div>
   );
 };
 

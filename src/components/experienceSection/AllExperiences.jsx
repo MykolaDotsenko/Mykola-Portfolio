@@ -6,33 +6,51 @@ import { fadeIn } from "../../framerMotion/variants";
 const experiences = [
   {
     job: "Front-End Developer",
-    company: "Alex Apps",
-    date: "2022 - Present",
+    company: "Upwork",
+    date: "Jul2023 - Mar2024",
     responsibilities: [
-      "Implementing reusable components.",
-      "Participating in large scale application.",
-      "Working on the performance of web applications.",
-      "Generating new ideas for better user experience.",
+      "Developed responsive web applications using HTML, CSS, JavaScript, and React.",
+      "Built reusable UI components to streamline development.",
+      "Optimized web performance for faster loading.",
+      "Implemented AI tools to speed up coding tasks.",
+      "Contributed to large-scale projects with complex architecture.",
+      "Improved UX based on user feedback and testing.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Nucamp",
-    date: "2023 - Present",
+    job: "Software Developer Intern",
+    company: "BearIT Oy",
+    date: "Mar2024 - Nov2024",
     responsibilities: [
-      "Explaining and facilitating web development concepts.",
-      "Help students with their assignments and grade them weekly.",
-      "Provide support for students through their learning journey.",
+      "Created components in Next.js.",
+      "Implemented React Router for multi-page application functionality.",
+      "Worked with hooks.",
+      "Implemented application logic using TypeScript.",
+      "Styled pages using Tailwind CSS according to Figma designs.",
+      "Creating endpoints with Node js and Express.js.",
+      "Integrated Front-End with Back-End and displayed data using tRPC.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Sprints",
-    date: "2024 - Present",
+    job: "Software Developer",
+    company: "Nidos Ltd.",
+    date: "Aug2024 - Nov2024",
     responsibilities: [
-      "Teaching JavaScript, React and TailwindCSS.",
-      "Participating in preparing course materials.",
-      "Helping students through their way in learning web development technologies.",
+      "Developed the frontend using React and Tanstack.",
+      "Integrated REST APIs and tested with Postman.",
+      "Focused on UI development and user experience optimization.",
+      "Wrote Playwright tests to ensure system functionality.",
+    ],
+  },
+  {
+    job: "Software Developer Volunteer",
+    company: "Duoton AI",
+    date: "Feb2025 - Present",
+    responsibilities: [
+      "Delivered responsive and accessible UI components using Tailwind CSS.",
+      "Designed and optimized relational data models in Supabase with PostgreSQL to support scalable backend functionality.",
+      "Developed API endpoints and integrated full-stack features within a Next.js framework.",
+      "Implemented vector-based search capabilities to enhance data retrieval performance and user interaction.",
     ],
   },
 ];
@@ -44,7 +62,7 @@ const AllExperiences = () => {
         return (
           <>
             <SingleExperience key={index} experience={experience} />
-            {index < 2 ? (
+            {index < 3 ? (
               <motion.div
                 variants={fadeIn("right", 0)}
                 initial="hidden"

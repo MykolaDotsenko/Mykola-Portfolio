@@ -23,11 +23,11 @@ const experiences = [
     date: "Mar2024 - Nov2024",
     responsibilities: [
       "Created components in Next.js.",
-      "Implemented React Router for multi-page application functionality.",
+      "Implemented multi-page application functionality.",
       "Worked with hooks.",
       "Implemented application logic using TypeScript.",
       "Styled pages using Tailwind CSS according to Figma designs.",
-      "Creating endpoints with Node js and Express.js.",
+      "Creating endpoints within a Next.js framework",
       "Integrated Front-End with Back-End and displayed data using tRPC.",
     ],
   },
@@ -40,6 +40,8 @@ const experiences = [
       "Integrated REST APIs and tested with Postman.",
       "Focused on UI development and user experience optimization.",
       "Wrote Playwright tests to ensure system functionality.",
+      "Implemented AI tools to speed up coding tasks.",
+      "Collaborated closely with senior developers in an agile environment, providing active contribution and input."
     ],
   },
   {
@@ -57,7 +59,7 @@ const experiences = [
 
 const AllExperiences = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col items-center justify-between">
+    <div className="flex md:flex-row sm:flex-col flex-wrap items-start gap-6">
       {experiences.map((experience, index) => {
         return (
           <>

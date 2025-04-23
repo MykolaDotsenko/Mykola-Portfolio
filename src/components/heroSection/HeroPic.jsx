@@ -14,7 +14,7 @@ const HeroPic = () => {
       <img
         src="../../public/images/HexaPic.png"
         alt="Mykola Dotsenko"
-        className="max-h-[370px] w-auto"
+        className="max-h-[380px] w-auto"
       />
 
       <div className=" absolute -z-10 flex justify-center items-center animate-pulse ">

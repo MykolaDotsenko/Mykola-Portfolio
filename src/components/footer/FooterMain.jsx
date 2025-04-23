@@ -25,7 +25,7 @@ const FooterMain = () => {
   ];
   return (
     <div className="px-4">
-      <div className="w-full h-[1px] bg-lightGrey mt-24"></div>
+      <div className="w-full h-[1px] bg-lightGrey mt-14"></div>
       <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto sm:hidden">
         <p className="text-3xl text-lightGrey ">Mykola Dotsenko</p>
         <ul className="flex gap-4 text-lightGrey text-xl">

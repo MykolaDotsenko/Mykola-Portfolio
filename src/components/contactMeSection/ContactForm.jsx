@@ -38,13 +38,13 @@ const ContactForm = () => {
   return (
     <div>
       <p className="text-cyan">{success}</p>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2">
         <input
           type="text"
           name="from_name"
           placeholder="Your Name"
           required
-          className="h-12 rounded-lg bg-lightBrown px-2"
+          className="h-11 rounded-lg bg-lightBrown px-2"
           value={name}
           onChange={handleName}
         />
@@ -53,14 +53,14 @@ const ContactForm = () => {
           name="from_email"
           placeholder="Your Email"
           required
-          className="h-12 rounded-lg bg-lightBrown px-2"
+          className="h-11 rounded-lg bg-lightBrown px-2"
           value={email}
           onChange={handleEmail}
         />
         <textarea
           type="text"
           name="message"
-          rows="9"
+          rows="8"
           cols="50"
           placeholder="Message"
           required

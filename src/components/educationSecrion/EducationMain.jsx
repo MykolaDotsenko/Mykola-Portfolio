@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { Link } from "react-scroll"; 
 
 const EducationMain = () => {
   return (
@@ -24,20 +25,29 @@ const EducationMain = () => {
             transition={{ repeat: Infinity, duration: 1.5 }}
             className="mt-20"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-orange mx-auto"
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-128} 
+              className="cursor-pointer"
             >
-              <path d="M12 5v14M19 12l-7 7-7-7"/>
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-orange mx-auto hover:text-cyan transition-colors duration-300"
+              >
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+              </svg>
+            </Link>
           </motion.div>
         </div>
       </div>

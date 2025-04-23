@@ -3,7 +3,7 @@ import ContactText from "./ContactText";
 
 const ContactMeLeft = () => {
   return (
-    <div className="flex flex-col gap-8 w-full">
+    <div className="flex flex-col gap-1 w-full">
       <ContactText />
       <ContactForm />
     </div>
